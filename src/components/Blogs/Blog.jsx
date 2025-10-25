@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Blog = ({blog}) => {
-    console.log(blog);
+const Blog = ({blog,handleBukmarked,handleMarkAsRead}) => {
+    // console.log(blog);
     
     return (
         <div>
@@ -21,8 +21,8 @@ const Blog = ({blog}) => {
     </div>
     <p className='text-gray-500 text-left'>{blog.description}</p>
     <div className="card-actions justify-end">
-      <button className='btn btn-xs'>Bukmark</button>
-      <button className='btn btn-xs'>Read in time</button>
+      <button className='btn btn-xs' onClick={()=>handleBukmarked(blog)}>Bukmark</button>
+      <button className='btn btn-xs' onClick={()=>handleMarkAsRead(blog.reading_time, blog.id)}>Mark As Read</button>
     </div>
   </div>
 </div>
