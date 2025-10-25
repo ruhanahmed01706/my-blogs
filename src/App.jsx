@@ -32,10 +32,10 @@ function App() {
       
 
       <div className="main-conteinar flex text-center">
-        <div className="left-conteinar w-[70%]">
+        <div className="left-conteinar w-[60%] md:w-[70%]">
           <Blogs handleBukmarked={handleBukmarked} handleMarkAsRead={handleMarkAsRead}></Blogs>
         </div>
-        <div className="right-conteinar w-[30%] ">
+        <div className="right-conteinar w-[40%] md:w-[30%] ">
           <h1 className='text-xl ' >Reading Time: {countMark}</h1>
           <h1 className='text-xl '>Bukmarked Count: {bukmarked.length}</h1>
           {

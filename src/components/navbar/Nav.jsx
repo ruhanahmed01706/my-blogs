@@ -5,16 +5,14 @@ const Nav = () => {
         <div>
             <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-xl font-bold">My <span className='text-orange-400'>Blogs</span></a>
   </div>
   <div className="flex gap-2">
     <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+          <img src="https://img.icons8.com/?size=100&id=MmupZtPbnw66&format=png&color=000000" alt="" />
         </div>
       </div>
       <ul

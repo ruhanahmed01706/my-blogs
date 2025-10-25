@@ -11,13 +11,13 @@ const Blog = ({blog,handleBukmarked,handleMarkAsRead}) => {
       src={blog.cover}
       alt="blog" />
   </figure>
-  <div className="p-5">
-    <h2 className="card-title">
+  <div className="p-1 md:p-5">
+    <h2 className="text-left font-bold">
       {blog.title}
     </h2>
-    <div className='flex gap-3 items-center my-2'>
-        <div ><img className='w-15 h-15 rounded-4xl'  src={blog.author_img} alt="" /></div>
-        <h1 className='text-3xl'>{blog.author}</h1>
+    <div className='flex gap-1 md:gap-3 items-center my-2'>
+        <div ><img className='w-15 h-15 rounded-full'  src={blog.author_img} alt="" /></div>
+        <h1 className='text-xl md:text-3xl'>{blog.author}</h1>
     </div>
     <p className='text-gray-500 text-left'>{blog.description}</p>
     <div className="card-actions justify-end">
